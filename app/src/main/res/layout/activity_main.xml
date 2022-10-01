@@ -1,104 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradiant_bg"
+    android:orientation="vertical">
 
+    <TextView
+        android:text="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:hint="example@example.com" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Password " />
+    <Button
+        android:backgroundTint="@null"
+        android:id="@+id/loginButton"
+        android:background="@drawable/bottom_transparent"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:text="SIGN IN"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"
+    />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+    >
         <TextView
-            android:id="@+id/tvFirstTextView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="40dp"
-            android:background="#00ff00"
-            android:gravity="center_vertical|right"
-            android:layout_gravity="right"
-            android:padding="20dp"
-            android:text="MY First TextView alkd skdl sdkls kdlskdsl skdl skdls ksdlk"
+            android:layout_width="195dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/white"
+            android:textAllCaps="true" />
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="0dp"
+            android:paddingStart="80dp"
+            android:text="Join"
             android:textAllCaps="true"
-            android:textColor="#ffff0000"
-            android:textSize="16dp"
-            android:textStyle="bold|italic" />
-
-        <Button
-            android:id="@+id/btnFirstButton"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:text="This is Our First Button"
-            android:textAllCaps="false"
-            android:textColor="#f0f"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:hint="Please enter your name" />
-
-        <Spinner
-            android:id="@+id/spCities"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/citiesNames" />
-
-        <TextView
-            android:id="@+id/tvSelectedCity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/purple_200" />
-
-        <RadioGroup
-            android:id="@+id/rgEnableButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checkedButton="@id/rbFirst"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbFirst"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Enabled" />
-
-            <RadioButton
-                android:id="@+id/rbSecond"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Disabled" />
-        </RadioGroup>
-
-        <CheckBox
-            android:id="@+id/cbCourse1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/checkBoxText"
-            android:textSize="20dp" />
-
-        <CheckBox
-            android:id="@+id/cbCourse2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Course 2"
-            android:textSize="20dp" />
-
-        <CheckBox
-            android:id="@+id/cbCourse3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Course 3"
-            android:textSize="20dp" />
-
-        <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:padding="60dp"
-            android:src="@drawable/icon" />
+            android:textColor="@color/white" />
     </LinearLayout>
-</ScrollView>
+
+
+</LinearLayout>
